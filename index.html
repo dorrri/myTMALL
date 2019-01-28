@@ -3,8 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>myTMALL</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
 </head>
 <body>
+<div class="top">
+    <div id="top-nav"></div>
+    <script>$("#top-nav").load("top-nav.html");</script>
+    <!--top-nav end-->
+    <div class="top-search">
+        <img class="logo" src="img/site/logo.gif">
+        <div class="search">
+            <div class="search-box">
+                <input type="text" placeholder="时尚男鞋  太阳镜" name="keyword">
+                <button class="search-btn" type="button">搜索</button>
+            </div>
+            <div class="search-text">
+                <a href="#">平衡车</a><span>|</span>
+                <a href="#">扫地机器人</a><span>|</span>
+                <a href="#">原汁机</a><span>|</span>
+                <a href="#">冰箱</a>
+            </div>
+        </div>
+    </div>
+    <!--top-search end-->
+</div>
 
 </body>
 </html>

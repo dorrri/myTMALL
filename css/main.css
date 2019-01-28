@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-size: 12px;
-    font-family: Arial, serif;
+    font-family: "Microsoft YaHei UI", serif;
 }
 
 .TMALLred {
@@ -49,4 +49,153 @@
 
 .top-nav-left li {
     float: left;
+}
+
+.top-search {
+    position: relative;
+    width: 1200px;
+    height: 130px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+}
+.search {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 504px;
+    height: 60px;
+}
+
+.search-box {
+    width: 502px;
+    height: 40px;
+    padding: 1px;
+    background-color: #FF0036;
+}
+
+.search-text {
+    margin-top: 5px;
+    margin-left: -23px;
+ }
+
+.search-text a {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: #999999;
+}
+
+.search-text a:hover {
+    color: #FF0036;
+}
+
+.search-text span {
+    color: #999999;
+}
+
+.search input {
+    width: 375px;
+    height: 36px;
+    margin: 1px;
+    border: 1px solid transparent;
+    padding-left: 5px;
+    outline: none;
+}
+
+.search-btn {
+    width: 110px;
+    font-size: 20px;
+    font-family: "Microsoft YaHei UI", serif;
+    background-color: #FF0036;
+    color: white;
+    font-weight: bold;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.search-btn:hover {
+    cursor: pointer;
+}
+
+.search-btn:active {
+    padding-left: 1px;
+}
+
+.top-simsearch {
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.simplelogo {
+    float: left;
+    margin-top: 10px;
+}
+
+.simsearch {
+    float: right;
+    margin-top: 5px;
+}
+
+.simsearch-box {
+    background-color: #FF0036;
+    padding: 1px;
+}
+.simsearch input {
+    width: 225px;
+    height: 30px;
+    margin: 1px;
+    padding-left: 3px;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+.simsearch-btn {
+    width: 60px;
+    border: 1px solid transparent;
+    background-color: #FF0036;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.simsearch-btn:hover {
+    cursor: pointer;
+}
+
+.simsearch-btn:active {
+    padding-left: 1px;
+}
+
+.simsearch-text {
+    margin-top: 5px;
+    margin-left: -12px;
+}
+
+.simsearch-text a {
+    display: inline-block;
+    width: 60px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #999999;
+}
+
+.simsearch-text a:hover {
+    color: #FF0036;
+}
+
+.simsearch-text span {
+    color: #999999;
 }
