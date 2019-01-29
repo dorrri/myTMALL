@@ -197,7 +197,6 @@ a:hover {
 }
 
 .footer {
-    position: relative;
     width: 1000px;
     margin: 0 auto;
 }
@@ -277,7 +276,9 @@ a:hover {
     width: 100%;
     margin: 10px 0;
 }
-
+.warp-head {
+    background-color: #E8E8E8;
+}
 .headbar {
     width: 100%;
     height: 36px;
@@ -308,6 +309,82 @@ a:hover {
 }
 
 .slide {
-    width: 1195px;
+    position: relative;
+    width: 1180px;
+    height: 500px;
+    overflow: hidden;
     margin:0 auto;
+}
+
+.right-menu img {
+    display: inline-block;
+    width: 90px;
+    margin: 0 20px;
+}
+
+.right-menu a {
+    display: inline-block;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    color: white;
+    padding: 0 20px;
+    font-weight: bold;
+}
+.pic {
+    position: absolute;
+    left: -1180px;
+    width: 7170px;
+    z-index: 1;
+}
+.pic li {
+    float: left;
+    list-style-type: none;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 470px;
+    left: 537px;
+    z-index: 4;
+}
+.slide-btn span {
+    display: inline-block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slide-btn span.on {
+    background-color: white;
+}
+
+.slide .arrow {
+    position: absolute;
+    display: none;
+    top: 225px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    opacity: .5;
+    font-size: 50px;
+    text-align: center;
+    z-index: 5;
+}
+.slide:hover .arrow {
+    display: block;
+}
+.slide .arrow#next {
+    right: 0;
+}
+.slide .arrow#pre {
+    left: 0;
+}
+.slide .arrow:hover {
+    color: white;
 }
