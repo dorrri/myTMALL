@@ -6,7 +6,7 @@
 }
 
 .TMALLred {
-    color: #FF0036;
+    color: #FF0036!important;
 }
 
 .top-nav {
@@ -276,6 +276,7 @@ a:hover {
     margin: 10px 0;
 }
 .warp-head {
+    position: relative;
     background-color: #E8E8E8;
 }
 .headbar {
@@ -285,23 +286,23 @@ a:hover {
     overflow: hidden;
 }
 
-.mainmenu, .right-menu {
+.headbar .mainmenu, .headbar .right-menu {
     float: left;
 }
 
-.mainmenu {
+.headbar .mainmenu {
     margin-left: 120px;
-    padding-left: 30px;
-    width: 160px;
+    padding-left: 20px;
+    width: 170px;
     height: 36px;
     line-height: 36px;
     background-color: #C60A0A;
 }
-.mainmenu img {
+.headbar .mainmenu img {
     vertical-align: middle;
 }
-.mainmenu span {
-    margin-left: 10px;
+.headbar .mainmenu span {
+    margin-left: 20px;
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -387,4 +388,78 @@ a:hover {
 }
 .slide .arrow:hover {
     color: white;
+}
+.category-menu {
+    position: absolute;
+    left: 120px;
+    width: 190px;
+    height: 500px;
+    background-color: rgba(0,0,0,.5);
+    z-index: 6;
+}
+.category-menu li {
+    width: 170px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    margin: 1px 0;
+    list-style-type: none;
+}
+.category-menu li>a, .category-menu li span {
+    margin: 0 1px;
+    color: white;
+    font-size: 14px;
+}
+.category-menu li i {
+    color: white;
+}
+.category-menu li:hover {
+    background-color: white;
+}
+.category-menu li:hover>a,.category-menu li:hover span,.category-menu li:hover i {
+    color: #686868;
+}
+.category-menu .submenu {
+    display: none;
+    position: absolute;
+    left: 190px;
+    top: 0;
+    width: 850px;
+    padding: 15px 0;
+    background-color: white;
+}
+.left-submenu {
+    width: 700px;
+    background-color: #E7E7E7;
+}
+.category-menu li:hover .submenu {
+    display: block;
+}
+.left-submenu-desc {
+    width: 675px;
+    margin-left: 25px;
+}
+
+.left-submenu-desc h2, .left-submenu-text {
+    float: left;
+}
+.left-submenu-desc h2 {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 4px;
+}
+.left-submenu-text {
+    width: 530px;
+    margin-left: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #E8E8E8;
+}
+.left-submenu-text a {
+    color: #686868;
+    font-size: 14px;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+.left-submenu-text a:hover {
+    color: #FF0036;
 }
