@@ -456,6 +456,9 @@ a:hover {
     font-size: 14px;
     letter-spacing: 4px;
     text-align: justify;
+    -moz-text-align-last: justify;
+    text-align-last: justify;
+    text-justify: inter-ideograph;
 }
 .left-submenu-desc h2:after {
     content: "";
