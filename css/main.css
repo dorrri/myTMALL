@@ -409,6 +409,8 @@ a:hover {
     margin: 0 1px;
     color: white;
     font-size: 14px;
+    font-family: "Microsoft YaHei UI", Serif;
+
 }
 .category-menu li i {
     color: white;
@@ -419,34 +421,46 @@ a:hover {
 .category-menu li:hover>a,.category-menu li:hover span,.category-menu li:hover i {
     color: #686868;
 }
-.category-menu .submenu {
+.submenu {
     display: none;
     position: absolute;
     left: 190px;
     top: 0;
-    width: 850px;
-    padding: 15px 0;
-    background-color: white;
+    width: 869px;
+    min-height: 500px;
+    background-color: #F2F2F2;
 }
 .left-submenu {
-    width: 700px;
-    background-color: #E7E7E7;
+    float: left;
+    width: 650px;
+    min-height: 500px;
+    padding: 10px 0 10px 25px;
+    background-color: white;
+
 }
 .category-menu li:hover .submenu {
     display: block;
 }
 .left-submenu-desc {
-    width: 675px;
-    margin-left: 25px;
+    width: 650px;
+    margin: 5px 0;
+    line-height: 25px;
 }
 
-.left-submenu-desc h2, .left-submenu-text {
+.left-submenu-desc, .left-submenu-desc h2, .left-submenu-text {
     float: left;
 }
 .left-submenu-desc h2 {
+    display: inline-block;
+    width: 90px;
     font-size: 14px;
-    line-height: 30px;
     letter-spacing: 4px;
+    text-align: justify;
+}
+.left-submenu-desc h2:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
 }
 .left-submenu-text {
     width: 530px;
@@ -459,7 +473,31 @@ a:hover {
     font-size: 14px;
     margin-right: 10px;
     white-space: nowrap;
+    font-family: "Microsoft YaHei UI", Serif;
 }
 .left-submenu-text a:hover {
     color: #FF0036;
+}
+.right-submenu {
+    float: right;
+    width: 174px;
+}
+.right-submenu-top {
+    float: right;
+    width: 174px;
+    padding: 10px;
+}
+.right-submenu-top img {
+    display: block;
+    float: left;
+    width: 85px;
+    margin: 1px;
+    background-color: white;
+}
+.right-submenu-bottom {
+    float: right;
+    padding-top: 20px;
+}
+.right-submenu-bottom img {
+    width: 194px;
 }
